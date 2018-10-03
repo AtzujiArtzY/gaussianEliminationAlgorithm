@@ -2,10 +2,19 @@
 package gaussianEliminationMethod;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class gaussianElimination {
         public static void main(String[] args) {
-            double[][] equation = {{19,3,2,9},{3,15,1,11},{1,2,-3,10}};
+		Scanner scan = new Scanner(System.in);
+            //double[][] equation = {{19,3,2,9},{3,15,1,11},{1,2,-3,10}};
+		double[][] equation = double[3][3];
+		for(int i=0; i<3; i++) {
+			for(int j=0; j<3; j++) {
+				System.out.print("Input array["+i+"][+"j+"] : ");
+				equation = scan.nextDouble[i][j];
+			}
+		}
             System.out.println("Equation Matrix");
             printMatrix(equation);
             solve(equation);
